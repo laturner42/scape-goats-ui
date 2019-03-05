@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Crossword from './Crossword';
+import Playspace from './Playspace';
 
 class App extends Component {
+
+  handleTouchMove = (e) => {
+    let changedTouch = e.changedTouches[0];
+    let elem = document.elementFromPoint(changedTouch.clientX, changedTouch.clientY);
+    console.log(elem.id);
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {
+          window.location.pathname.includes('host') ?
+          <Crossword /> :
+          <Playspace />
+        }
       </div>
     );
   }

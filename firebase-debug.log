@@ -1,0 +1,13 @@
+[debug] [2019-03-05T04:45:29.491Z] ----------------------------------------------------------------------
+[debug] [2019-03-05T04:45:29.494Z] Command:       /usr/local/Cellar/node/11.8.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-03-05T04:45:29.494Z] CLI Version:   6.4.0
+[debug] [2019-03-05T04:45:29.494Z] Platform:      darwin
+[debug] [2019-03-05T04:45:29.494Z] Node Version:  v11.8.0
+[debug] [2019-03-05T04:45:29.495Z] Time:          Mon Mar 04 2019 23:45:29 GMT-0500 (Eastern Standard Time)
+[debug] [2019-03-05T04:45:29.495Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-05T04:45:29.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-05T04:45:29.505Z] > authorizing via signed-in user
+[debug] [2019-03-05T04:45:29.505Z] [iam] checking project scape-goats for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-03-05T04:45:29.506Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/scape-goats:testIamPermissions  
+
