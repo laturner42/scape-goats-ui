@@ -23,7 +23,7 @@ class Playspace extends Component {
     selected: [],
     foundWords: [],
     typedWord: '',
-    submissions: [{ word: 'hello', status: STYPES.FOUND }],
+    submissions: [],
     screenWidth: 0,
     allWords: [],
     lastFourFound: [],
@@ -292,7 +292,9 @@ class Playspace extends Component {
                   </Button>
                 </div>
               </div>
-              <Button variant="body1" style={{ margin: '0.5rem' }}>or, click here to Host a Game</Button>
+              <Button variant="body1" style={{ margin: '0.5rem' }} onClick={() => window.location.href = '/host'}>
+                or, click here to Host a Game
+              </Button>
             </div>
           }
           {
