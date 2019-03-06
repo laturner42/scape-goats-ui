@@ -76,6 +76,7 @@ class Playspace extends Component {
     sessionStorage.setItem("gameId", '');
     this.setState({
       gameId: '',
+      puzzleCode: '',
       letters: [],
       foundWords: [],
       submissions: [],

@@ -120,7 +120,6 @@ class Crossword extends Component {
           flexGrow: 1,
           display: 'flex',
           flexDirection: 'row',
-          backgroundColor: '#ffc04c',
         }}
       >
         <div>
